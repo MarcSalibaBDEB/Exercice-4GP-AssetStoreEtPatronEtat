@@ -30,6 +30,5 @@ public class MouvementSquelette : MonoBehaviour
                 _animator.SetBool("Walk",true);
             }
         }
-
     }
 }
