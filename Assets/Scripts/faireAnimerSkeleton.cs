@@ -21,26 +21,18 @@ public class faireAnimerSkeleton : MonoBehaviour
         
         animator.SetBool("Attack", attaque);
 
-        bool walk = Input.GetMouseButton(0);
-
-        animator.SetBool("Walk", walk);
-
         if (Input.GetMouseButtonDown(0))
         {
             Vector3? vecteurPoint = DeterminerClic();
 
             if (vecteurPoint.HasValue)
             {
+                animator.SetBool("Walk", true);
                 Vector3 positionFinale = new Vector3(vecteurPoint.Value.x, transform.localPosition.y, vecteurPoint.Value.z);
                 StartCoroutine(DeplacerSquelette(positionFinale));
                 StartCoroutine(TournerSquelette(positionFinale));
             }
-            
-
         }
-        
-
-        
     }
 
     private Vector3? DeterminerClic()
