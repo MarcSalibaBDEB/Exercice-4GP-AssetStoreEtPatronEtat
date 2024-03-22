@@ -1170,7 +1170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   angleMinimum: -30
   angleMaximum: 30
-  vitesseRotation: 1000
+  vitesseRotation: 700
 --- !u!1001 &524978937
 PrefabInstance:
   m_ObjectHideFlags: 0
